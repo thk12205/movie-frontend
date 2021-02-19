@@ -2,9 +2,13 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/signup">Signup</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/logout">Logout</router-link> |
+      <span v-if="loggedIn()">
+        <router-link to="/logout">Logout</router-link> |
+      </span>
+      <span v-else>
+        <router-link to="/signup">Signup</router-link> |
+        <router-link to="/login">Login</router-link> |
+      </span>
       <router-link to="/movies">Movie Index</router-link> |
       <router-link to="/movies/new">New Movie</router-link>
     </div>
@@ -12,31 +16,21 @@
   </div>
 </template>
 
-// import MoviesIndex from "../views/MoviesIndex.vue";
-// import MoviesNew from "../views/MoviesNew.vue";
-// import MoviesShow from "../views/MoviesShow.vue";
-// import MoviesEdit from "../views/MoviesEdit.vue";
 
-// {
-//   path: "/movies",
-//   name: "Movies-index",
-//   component: MoviesIndex
-// },
-// {
-//   path: "/movies/new",
-//   name: "Movies-new",
-//   component: MoviesNew
-// },
-// {
-//   path: "/movies/:id",
-//   name: "Movies-show",
-//   component: MoviesShow
-// },
-// {
-//   path: "/movies/:id/edit",
-//   name: "Movies-edit",
-//   component: MoviesEdit
-// }
+
+<script>
+
+export default {
+  data: function () {
+    return {};
+  },
+  methods: {
+    loggedIn: function () {
+      return localStorage.getItem("jwt");
+    },
+  },
+};
+</script>
 
 <style>
 #app {
