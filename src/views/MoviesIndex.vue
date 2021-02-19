@@ -9,10 +9,10 @@
       <p>Director: {{ movie.director }}</p>
       <p>english: {{ movie.english }}</p>
       <p>genres: {{ movie.genres }}</p>
+      <!-- "/movies/:id/edit" -->
       <router-link :to="`/movies/${movie.id}`">
-        <button>Show</button>
-      </router-link><br>
-      <button>Delete</button>
+        <button>Show</button> </router-link
+      ><br />
     </div>
   </div>
 </template>

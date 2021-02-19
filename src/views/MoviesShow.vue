@@ -6,9 +6,9 @@
     <p>Director: {{ movie.director }}</p>
     <p>english: {{ movie.english }}</p>
     <p>genres: {{ movie.genres }}</p>
-    <router-link :to="`/movies/edit/${movie.id}`">
-      <button>Edit</button>
-    </router-link><br>
+    <router-link :to="`/movies/${movie.id}/edit`">
+      <button>Edit Movie</button> </router-link
+    ><br />
   </div>
 </template>
 
