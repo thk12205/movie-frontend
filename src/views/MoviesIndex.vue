@@ -4,8 +4,42 @@
   <div class="movies-index">
     Search by title: <input type="text" v-model="titleFilter" list="titles" />
     <br />
-    <button v-on:click="orderByFilter = 'title'">Order By Title</button>
-    <button v-on:click="orderByFilter = 'year'">Order By Title</button>
+    <h3>Order By:</h3>
+    <input
+      type="radio"
+      id="title"
+      name="orderFilter"
+      value="title"
+      v-on:change="orderByFilter = 'title'"
+    />
+    <label for="title">Title</label><br />
+    <input
+      type="radio"
+      id="year"
+      name="orderFilter"
+      value="year"
+      v-on:change="orderByFilter = 'year'"
+    />
+    <label for="year">Year</label><br />
+    <!--  -->
+    <input
+      type="radio"
+      id="director"
+      name="orderFilter"
+      value="director"
+      v-on:change="orderByFilter = 'director'"
+    />
+    <label for="director">Director</label> <br />
+    <!--  -->
+    <input
+      type="radio"
+      id="ID"
+      name="orderFilter"
+      value="ID"
+      v-on:change="orderByFilter = 'id'"
+    />
+    <label for="ID">ID</label>
+
     <datalist id="titles">
       <option v-for="movie in movies" v-bind:key="movie.id">
         {{ movie.title }}

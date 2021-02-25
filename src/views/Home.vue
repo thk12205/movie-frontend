@@ -2,21 +2,22 @@
   <div class="home">
     <h1>{{ message }}</h1>
     <!-- movie data fields -->
-    Title: <input type="text" v-model="newMovieTitle"/><br>
+    <!-- Title: <input type="text" v-model="newMovieTitle"/><br>
     Year: <input type="text" v-model="newMovieYear"/><br>
     Plot: <input type="text" v-model="newMoviePlot"/><br>
-    Director: <input type="text" v-model="newMovieDirector"/><br>
+    Director: <input type="text" v-model="newMovieDirector"/><br> -->
     <!-- English: (true/false) <input type="text" v-model="newMovieEnglish"/><br> -->
     <!-- button to add movie -->
-    <button v-on:click="createMovie()">Create Movie</button>
+    <!-- <button v-on:click="createMovie()">Create Movie</button>
     <div v-for="movie in movies" v-bind:key = "movie.id">
       <h1> {{movie.title}} </h1>
       Release Year: {{movie.year}} <br>
       Plot: {{movie.plot}} <br>
-      Director: {{movie.director}} <br>
-      <!-- Genres: <div v-for="genre in movie.genres" v-bind:key = "movie.id"> <br> -->
-      Genres: {{movie.genres}} <br>
-    </div>
+      Director: {{movie.director}} <br> -->
+    <!-- Genres: <div v-for="genre in movie.genres" v-bind:key = "movie.id"> <br> -->
+    <!-- Genres: {{movie.genres}} <br> -->
+    <!-- </div> -->
+    <p>A compendium of the filmotographic arts and whimsy~</p>
   </div>
 </template>
 <style></style>

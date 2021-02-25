@@ -9,21 +9,43 @@
       </ul>
       <div class="form-group">
         <label>Title:</label>
-        <input type="text" class="form-control" v-model="movie.title" />
+        <input
+          type="text"
+          class="form-control"
+          v-model="movie.title"
+          placeholder="Seven Samurai"
+        />
       </div>
       <div class="form-group">
         <label>Year:</label>
-        <input type="text" class="form-control" v-model="movie.year" />
+        <input
+          type="text"
+          class="form-control"
+          v-model="movie.year"
+          placeholder="1954"
+        />
       </div>
       <div class="form-group">
         <label>Plot:</label>
-        <input type="text" class="form-control" v-model="movie.plot" />
+        <input
+          type="text"
+          class="form-control"
+          v-model="movie.plot"
+          placeholder="What's the use of worrying about your beard when your head's about to be taken?"
+        />
       </div>
       <div class="form-group">
         <label>Director:</label>
-        <input type="text" class="form-control" v-model="movie.director" />
+        <input
+          type="text"
+          class="form-control"
+          v-model="movie.director"
+          placeholder="Akira Kurosawa"
+        />
       </div>
-      <input type="submit" class="btn btn-primary" value="Submit" />
+      <div>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+      </div>
     </form>
     <button v-on:click="testMethod()"></button>
   </div>

@@ -9,7 +9,7 @@
         <router-link to="/signup">Signup</router-link> |
         <router-link to="/login">Login</router-link> |
       </span>
-      <router-link to="/movies">Movie Index</router-link> |
+      <router-link to="/movies" autofocus>Movie Index</router-link> |
       <router-link to="/movies/new">New Movie</router-link>
     </div>
     <router-view />
@@ -19,7 +19,6 @@
 
 
 <script>
-
 export default {
   data: function () {
     return {};
