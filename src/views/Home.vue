@@ -17,6 +17,11 @@
     <!-- Genres: <div v-for="genre in movie.genres" v-bind:key = "movie.id"> <br> -->
     <!-- Genres: {{movie.genres}} <br> -->
     <!-- </div> -->
+    <img
+      src="https://media2.giphy.com/media/LptvdvZLb3KLHJLc0W/giphy.gif"
+      alt="The best movie of all Time?"
+    />
+
     <p>A compendium of the filmotographic arts and whimsy~</p>
   </div>
 </template>
