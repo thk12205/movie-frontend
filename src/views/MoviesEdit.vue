@@ -26,7 +26,7 @@
       </div>
       <input type="submit" class="btn btn-primary" value="Submit" />
     </form>
-    <button v-on:click="destroyMovie()">Delete</button>
+    <button v-on:click="destroyMovie()" type="button" class="btn btn-danger">Delete</button>
   </div>
 </template>
 
